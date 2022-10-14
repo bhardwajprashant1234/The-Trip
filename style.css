@@ -14,11 +14,11 @@ html {
 }
 
 :root {
-  --primary-color: #1d8d48;
-  --secondary-color: rgb(230, 19, 19);
-  --white-color: rgb(153, 46, 117);
-  --grey-color: rgb(54, 5, 5);
-  --light-grey-color: rgb(110, 104, 104);
+  --primary-color: #909494;
+  --secondary-color: rgb(151, 81, 221);
+  --white-color: rgb(121, 173, 231);
+  --grey-color: rgb(167, 73, 144);
+  --light-grey-color: rgb(213, 144, 108);
 }
 
 .center {
@@ -66,7 +66,7 @@ html {
 .navbar-wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(36, 149, 177, 0.7);
+  background-color: rgba(100, 186, 207, 0.7);
   position: fixed;
   left: 0;
   bottom: -100%;
@@ -85,7 +85,10 @@ html {
 .navbar {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(211, 193, 193, 0.5), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(
+      rgba(189, 110, 110, 0.5),
+      rgba(101, 165, 210, 0.3)
+    ),
     url(images/navbar-bg.jpg) center no-repeat;
   background-size: cover;
   position: relative;
@@ -104,11 +107,11 @@ html {
 }
 
 .line-1 {
-  transform: rotate(40deg);
+  transform: rotate(-40deg);
 }
 
 .line-2 {
-  transform: rotate(-40deg);
+  transform: rotate(40deg);
 }
 
 .nav-list {
@@ -122,10 +125,10 @@ html {
   color: var(--white-color);
   text-transform: uppercase;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.5;
   position: relative;
   top: -100%;
-  transition: all 0.3s;
+  transition: all 0.3s ease-out;
 }
 
 .change .nav-link {
@@ -177,13 +180,13 @@ html {
 }
 
 .heading {
-  font-size: 8rem;
+  font-size: 10rem;
   color: var(--white-color);
 }
 
 .header-paragraph {
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 700;
   color: var(--secondary-color);
   max-width: 70rem;
   margin: auto;
@@ -258,8 +261,8 @@ html {
 }
 
 .header-image {
-  width: 35%;
-  animation: image-float 150s infinite;
+  width: 40%;
+  animation: image-float 200s infinite;
 }
 
 @keyframes image-float {
@@ -305,7 +308,7 @@ html {
 }
 
 .card {
-  width: 35rem;
+  width: 40rem;
   position: relative;
   perspective: 150rem;
 }
@@ -327,14 +330,14 @@ html {
 
 .change > .front-side {
   transform: translateZ(-5rem) translateX(3rem);
-  box-shadow: 0 2rem 4rem #777;
+  box-shadow: 0 2rem 4rem rgb(62, 61, 61);
   opacity: 0.5;
   z-index: 0;
 }
 
 .tour-name {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 500;
   text-transform: uppercase;
   position: absolute;
   top: 30%;
@@ -361,20 +364,20 @@ html {
 .back-side {
   position: absolute;
   top: 0;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   width: 100%;
   height: 100%;
   border-radius: 0.3rem;
-  box-shadow: 0 2rem 4rem #777;
+  box-shadow: 0 2rem 4rem rgb(0, 0, 0);
   flex-direction: column;
   transform: translateZ(-5rem) translateX(3rem);
   opacity: 0.5;
-  transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
+  transition: opacity 0.5s, transform 0.5s, box-shadow 0.5s;
 }
 
 .change > .back-side {
   transform: translateZ(0) translateX(0);
-  box-shadow: 0 0.5rem 2rem #aaa;
+  box-shadow: 0 0.5rem 2rem rgb(45, 43, 43);
   opacity: 0.9;
 }
 
@@ -401,7 +404,7 @@ html {
   top: 0.5rem;
   left: 0.5rem;
   padding: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(206, 187, 187, 0.8);
   color: var(--light-grey-color);
   border-radius: 0.3rem;
   border: none;
@@ -425,7 +428,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .bg-video {
@@ -441,16 +444,16 @@ html {
 }
 
 .story-bg {
-  background-color: rgba(238, 238, 238, 0.85);
+  background-color: rgba(219, 224, 184, 0.85);
   padding: 5rem;
   margin: 5rem;
   width: 70%;
-  box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.4);
-  transform: skewX(20deg);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.4);
+  transform: skewX(346deg);
 }
 
 .story {
-  transform: skewX(-20deg);
+  transform: skewX(20deg);
   display: flex;
 }
 
@@ -505,7 +508,7 @@ html {
 .contact-form {
   width: 70rem;
   height: 50rem;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(144, 133, 133, 0.95);
   margin: auto;
   flex-direction: column;
   border-radius: 0.5rem;
@@ -751,12 +754,12 @@ html {
 
   .contact-form {
     padding: 2rem;
-    height: 40rem;
+    height: 45rem;
   }
 }
 
 @media (max-width: 500px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
 }

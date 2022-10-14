@@ -13,11 +13,11 @@ html {
 }
 
 :root {
-  --primary-color: #2b81e4;
-  --secondary-color: #eee;
+  --primary-color: #53194c;
+  --secondary-color: rgba(238, 238, 238, 0.762);
   --white-color: #fff;
-  --grey-color: #555;
-  --light-grey-color: #777;
+  --grey-color: rgba(62, 61, 61, 0.498);
+  --light-grey-color: rgba(221, 219, 219, 0.43);
 }
 
 .center {
@@ -172,8 +172,8 @@ html {
 .header-text {
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  text-shadow: 0 0.3rem 0.5rem var(--grey-color);
+  letter-spacing: 0.18rem;
+  text-shadow: 0 0.33rem 0.43rem var(--grey-color);
 }
 
 .heading {
@@ -200,13 +200,13 @@ html {
 }
 
 .logo h1 span {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 900;
   color: var(--primary-color);
   text-transform: uppercase;
   background-color: var(--white-color);
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.8rem;
+  height: 3.8rem;
   margin: 0.5rem;
   border-radius: 50%;
 }
@@ -334,7 +334,7 @@ html {
   transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
 }
 
-.change>.front-side {
+.change > .front-side {
   transform: translateZ(-5rem) translateX(3rem);
   box-shadow: 0 2rem 4rem #777;
   opacity: 0.5;
@@ -381,7 +381,7 @@ html {
   transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
 }
 
-.change>.back-side {
+.change > .back-side {
   transform: translateZ(0) translateX(0);
   box-shadow: 0 0.5rem 2rem #aaa;
   opacity: 0.9;
@@ -451,11 +451,11 @@ html {
 }
 
 .story-bg {
-  background-color: rgba(238, 238, 238, 0.85);
+  background-color: rgba(235, 208, 208, 0.85);
   padding: 5rem;
   margin: 5rem;
   width: 70%;
-  box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.4);
+  box-shadow: 0 2rem 5rem rgba(68, 63, 63, 0.4);
   transform: skewX(20deg);
 }
 
@@ -547,20 +547,20 @@ html {
   padding: 3rem 1rem 1rem 1rem;
   background-color: var(--secondary-color);
   border: 0.1rem solid var(--secondary-color);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--light-grey-color);
   letter-spacing: 0.1rem;
   border-radius: 0.5rem;
-  transition: border 0.3s;
+  transition: border 0.2s;
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
-  border: 0.1rem solid #ccc;
+  border: 0.1rem solid rgb(228, 225, 225);
 }
 
 .input-group label {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -595,23 +595,23 @@ html {
 
 @keyframes contact-bg {
   0% {
-    background-color: #3d3d3d;
+    background-color: #3b3434;
   }
 
   25% {
-    background-color: #ced8e4;
+    background-color: #9c9d9e;
   }
 
   50% {
-    background-color: #1e81f3;
+    background-color: #26415f;
   }
 
   75% {
-    background-color: #ff7842;
+    background-color: #f25f25;
   }
 
   100% {
-    background-color: #3d3d3d;
+    background-color: #1d1c1c;
   }
 }
 

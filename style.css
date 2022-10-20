@@ -14,11 +14,11 @@ html {
 }
 
 :root {
-  --primary-color: #4f1948;
-  --secondary-color: rgba(238, 238, 238, 0.758);
+  --primary-color: #25194f;
+  --secondary-color: rgba(238, 238, 238, 0.267);
   --white-color: #fff;
-  --grey-color: rgba(72, 72, 72, 0.498);
-  --light-grey-color: rgba(221, 219, 219, 0.43);
+  --grey-color: rgba(72, 72, 72, 0.24);
+  --light-grey-color: rgba(221, 219, 219, 0.712);
 }
 
 .center {
@@ -29,7 +29,7 @@ html {
 
 .container {
   background-color: var(--secondary-color);
-  margin: 3.5rem;
+  margin: 3.4rem;
   box-shadow: 0 1rem 3rem var(--grey-color);
   overflow: hidden;
 }
@@ -66,7 +66,7 @@ html {
 .navbar-wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   position: fixed;
   left: 0;
   bottom: -100%;
@@ -163,7 +163,7 @@ html {
 .header {
   width: 100%;
   height: calc(100vh - 7rem);
-  background: linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)),
+  background: linear-gradient(rgba(34, 18, 255, 0.5), rgba(18, 113, 255, 0.3)),
     url(images/header-bg.jpg) center no-repeat;
   background-size: cover;
   position: relative;
@@ -362,7 +362,7 @@ html {
 .card-list-item {
   font-size: 1.6rem;
   font-weight: 500;
-  color: rgba(7, 7, 7, 0.5);
+  color: rgba(7, 7, 7, 0.4);
   margin: 2rem 0;
   border-bottom: 0.1rem solid var(--primary-color);
   padding-bottom: 1.5rem;
@@ -608,7 +608,7 @@ html {
   }
 
   75% {
-    background-color: #f25f25;
+    background-color: #f2b525;
   }
 
   100% {

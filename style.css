@@ -8,15 +8,16 @@
   outline: none;
 }
 
+/* Handling the responsiveness with 62.5% */
 html {
   font-size: 62.5%;
 }
 
 :root {
-  --primary-color: #53194c;
-  --secondary-color: rgba(238, 238, 238, 0.762);
+  --primary-color: #4f1948;
+  --secondary-color: rgba(238, 238, 238, 0.758);
   --white-color: #fff;
-  --grey-color: rgba(62, 61, 61, 0.498);
+  --grey-color: rgba(72, 72, 72, 0.498);
   --light-grey-color: rgba(221, 219, 219, 0.43);
 }
 
@@ -361,7 +362,7 @@ html {
 .card-list-item {
   font-size: 1.6rem;
   font-weight: 500;
-  color: var(--light-grey-color);
+  color: rgba(7, 7, 7, 0.5);
   margin: 2rem 0;
   border-bottom: 0.1rem solid var(--primary-color);
   padding-bottom: 1.5rem;
@@ -485,7 +486,7 @@ html {
 
 .story-paragraph {
   font-size: 1.8rem;
-  color: var(--light-grey-color);
+  color: rgba(102, 96, 96, alpha)0.43;
 }
 
 .story-paragraph::first-letter {
@@ -776,4 +777,9 @@ html {
   html {
     font-size: 45%;
   }
+}
+
+
+::selection {
+  background: #a1869d;
 }
